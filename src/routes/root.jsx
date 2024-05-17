@@ -1,6 +1,7 @@
 import React from 'react'
 import {Link, Outlet } from 'react-router-dom'
 import { useSelector } from 'react-redux'
+import logo from '../assets/greenbag.png'
 
 function Root() {
     const itemsInCart = useSelector(state => state.cart.items)
@@ -13,7 +14,7 @@ function Root() {
            <header className='h-20 py-4 bg-violet-950'>
         <div className='container mx-auto px-4 h-full flex flex-row items-center justify-between'>
           <div className='h-full flex flex-row items-center text-lg gap-4'>
-            <img className='w-12' src="/logos/greenbag.png" alt="" />
+            <img className='w-12' src={logo} alt="" />
             <span className='text-white'>BuyKart</span>
           </div>
           <Link to='/cart'>
