@@ -1,11 +1,11 @@
 import React, { useState } from 'react'
 import ProductCard from '../components/ProductCard/ProductCard'
-
+import img1 from '../assets/Pencil.webp' 
 function home() {
     const [products, setProducts] = useState([
         {
           _id: 1,
-          image: '/products/pencil.webp',
+          image: img1,
           category: 'Clothing',
           title: 'Pencil dress',
           price: 39.99,
